@@ -1,0 +1,97 @@
+.stat-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.25rem;
+}
+
+.stat-card-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: var(--border-radius);
+  flex-shrink: 0;
+}
+
+.stat-card-blue .stat-card-icon {
+  background: rgba(59, 130, 246, 0.15);
+  color: var(--color-primary);
+}
+
+.stat-card-purple .stat-card-icon {
+  background: rgba(139, 92, 246, 0.15);
+  color: var(--color-secondary);
+}
+
+.stat-card-green .stat-card-icon {
+  background: rgba(16, 185, 129, 0.15);
+  color: var(--color-success);
+}
+
+.stat-card-orange .stat-card-icon {
+  background: rgba(245, 158, 11, 0.15);
+  color: var(--color-warning);
+}
+
+.stat-card-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-card-value {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  line-height: 1.2;
+}
+
+.stat-card-label {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.stat-card-trend {
+  font-size: 0.75rem;
+  color: var(--color-success);
+  font-weight: 600;
+  margin-top: 0.15rem;
+}
+
+.welcome-card {
+  background: var(--gradient-primary);
+  color: var(--text-inverse);
+  padding: 1.5rem 2rem;
+  border-radius: var(--border-radius-lg);
+  margin-bottom: 1.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.welcome-card::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -20%;
+  width: 300px;
+  height: 300px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.welcome-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.35rem;
+}
+
+.welcome-card p {
+  opacity: 0.9;
+  font-size: 0.95rem;
+}
+
+.welcome-card-date {
+  margin-top: 0.75rem;
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
